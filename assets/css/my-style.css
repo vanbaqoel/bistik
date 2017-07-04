@@ -1,0 +1,89 @@
+body{
+	font-size: 9.5pt;
+	min-width: 400px;
+}
+
+body.login-layout{
+	min-width: 0;
+}
+
+.navbar-header > img {
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+/*Dashboard*/
+.inside-donut {
+    min-height: 250px;
+	line-height: 250px;
+	font-size: medium;
+	/*font-weight: bold;*/
+	color: steelblue;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	left: 0;
+	vertical-align: middle;
+	width: 100%;
+	/*z-index: 0;*/
+}
+
+.submenu > li div {
+	margin-right: 10px;
+}
+.dataTables_info { font-size: 13px }
+.alert-info { font-size: 13px }
+
+/* Set border to table wrapper */
+#dynamic-table_wrapper {
+	border: solid 1px rgb(221, 221, 221);
+}
+
+/* Remove overlapped left and right border */
+.table-bordered {
+	border-left: none;
+	border-right: none;
+}
+.table-bordered tr > :first-child {
+	border-left: none;
+}
+.table-bordered tr > :last-child {
+	border-right: none;
+}
+
+/* Remove overlapped bottom border */
+#dynamic-table_wrapper .row:last-child {
+	border-bottom: none;
+}
+
+/* Remove padding at satker lists block */
+.form-inline > div {
+	padding-left: 0;
+}
+
+/* Set processing message to top stack */
+.dataTables_processing{
+	z-index: 99999;
+}
+
+table.dataTable thead th,
+table.dataTable tbody td,
+table.dataTable tfoot th
+{
+    white-space: nowrap;
+}
+
+/*
+* Sort arrow icon positioning
+*/
+table.dataTable thead th div.DataTables_sort_wrapper {
+	position: relative;
+	padding-right: 20px;
+}
+
+table.dataTable thead th div.DataTables_sort_wrapper span {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+	right: 0;
+}
